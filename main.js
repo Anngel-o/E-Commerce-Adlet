@@ -1,186 +1,135 @@
 // PRODUCTOS
+const precioBolsa = 230;
 const productos = [
-    // Abrigos
+    // Bolsas
     {
-        id: "abrigo-01",
-        titulo: "Abrigo 01",
+        id: "bolsa-beso-rosa",
+        titulo: "Bolsa Beso Rosa",
         imagen: "./img/abrigos/01.jpg",
         categoria: {
-            nombre: "Abrigos",
-            id: "abrigos"
+            nombre: "Bolsas",
+            id: "bolsas"
         },
-        precio: 1000
+        precio: precioBolsa
     },
     {
-        id: "abrigo-02",
-        titulo: "Abrigo 02",
-        imagen: "./img/abrigos/02.jpg",
+        id: "bolsa-lila",
+        titulo: "Bolsa Lila",
+        imagen: "./img/abrigos/01.jpg",
         categoria: {
-            nombre: "Abrigos",
-            id: "abrigos"
+            nombre: "Bolsas",
+            id: "bolsas"
         },
-        precio: 1000
+        precio: precioBolsa
     },
     {
-        id: "abrigo-03",
-        titulo: "Abrigo 03",
-        imagen: "./img/abrigos/03.jpg",
+        id: "bolsa-lila-pequena",
+        titulo: "Bolsa Lila Pequeña",
+        imagen: "./img/abrigos/01.jpg",
         categoria: {
-            nombre: "Abrigos",
-            id: "abrigos"
+            nombre: "Bolsas",
+            id: "bolsas"
         },
-        precio: 1000
+        precio: precioBolsa
     },
     {
-        id: "abrigo-04",
-        titulo: "Abrigo 04",
-        imagen: "./img/abrigos/04.jpg",
+        id: "bolsa-azul-rey",
+        titulo: "Bolsa Azul Rey",
+        imagen: "./img/abrigos/01.jpg",
         categoria: {
-            nombre: "Abrigos",
-            id: "abrigos"
+            nombre: "Bolsas",
+            id: "bolsas"
         },
-        precio: 1000
+        precio: precioBolsa
     },
     {
-        id: "abrigo-05",
-        titulo: "Abrigo 05",
-        imagen: "./img/abrigos/05.jpg",
+        id: "bolsa-verde",
+        titulo: "Bolsa Verde",
+        imagen: "./img/abrigos/01.jpg",
         categoria: {
-            nombre: "Abrigos",
-            id: "abrigos"
+            nombre: "Bolsas",
+            id: "bolsas"
         },
-        precio: 1000
-    },
-    // Camisetas
-    {
-        id: "camiseta-01",
-        titulo: "Camiseta 01",
-        imagen: "./img/camisetas/01.jpg",
-        categoria: {
-            nombre: "Camisetas",
-            id: "camisetas"
-        },
-        precio: 1000
+        precio: precioBolsa
     },
     {
-        id: "camiseta-02",
-        titulo: "Camiseta 02",
-        imagen: "./img/camisetas/02.jpg",
+        id: "bolsa-olivo",
+        titulo: "Bolsa Olivo",
+        imagen: "./img/abrigos/01.jpg",
         categoria: {
-            nombre: "Camisetas",
-            id: "camisetas"
+            nombre: "Bolsas",
+            id: "bolsas"
         },
-        precio: 1000
+        precio: precioBolsa
     },
     {
-        id: "camiseta-03",
-        titulo: "Camiseta 03",
-        imagen: "./img/camisetas/03.jpg",
+        id: "bolsa-roja",
+        titulo: "Bolsa Roja",
+        imagen: "./img/abrigos/01.jpg",
         categoria: {
-            nombre: "Camisetas",
-            id: "camisetas"
+            nombre: "Bolsas",
+            id: "bolsas"
         },
-        precio: 1000
+        precio: precioBolsa
     },
     {
-        id: "camiseta-04",
-        titulo: "Camiseta 04",
-        imagen: "./img/camisetas/04.jpg",
+        id: "bolsa-buganbilia",
+        titulo: "Bolsa Buganbilia",
+        imagen: "./img/abrigos/01.jpg",
         categoria: {
-            nombre: "Camisetas",
-            id: "camisetas"
+            nombre: "Bolsas",
+            id: "bolsas"
         },
-        precio: 1000
+        precio: precioBolsa
     },
     {
-        id: "camiseta-05",
-        titulo: "Camiseta 05",
-        imagen: "./img/camisetas/05.jpg",
+        id: "bolsa-negra",
+        titulo: "Bolsa Negra",
+        imagen: "./img/abrigos/01.jpg",
         categoria: {
-            nombre: "Camisetas",
-            id: "camisetas"
+            nombre: "Bolsas",
+            id: "bolsas"
         },
-        precio: 1000
+        precio: precioBolsa
     },
     {
-        id: "camiseta-06",
-        titulo: "Camiseta 06",
-        imagen: "./img/camisetas/06.jpg",
+        id: "bolsa-negra-mono",
+        titulo: "Bolsa Negra Moño",
+        imagen: "./img/abrigos/01.jpg",
         categoria: {
-            nombre: "Camisetas",
-            id: "camisetas"
+            nombre: "Bolsas",
+            id: "bolsas"
         },
-        precio: 1000
+        precio: precioBolsa
     },
     {
-        id: "camiseta-07",
-        titulo: "Camiseta 07",
-        imagen: "./img/camisetas/07.jpg",
+        id: "bolsa-tommy",
+        titulo: "Bolsa Tommy",
+        imagen: "./img/abrigos/01.jpg",
         categoria: {
-            nombre: "Camisetas",
-            id: "camisetas"
+            nombre: "Bolsas",
+            id: "bolsas"
         },
-        precio: 1000
+        precio: precioBolsa
     },
     {
-        id: "camiseta-08",
-        titulo: "Camiseta 08",
-        imagen: "./img/camisetas/08.jpg",
+        id: "bolsa-olivo",
+        titulo: "Bolsa Olivo",
+        imagen: "./img/abrigos/01.jpg",
         categoria: {
-            nombre: "Camisetas",
-            id: "camisetas"
+            nombre: "Bolsas",
+            id: "bolsas"
         },
-        precio: 1000
-    },
-    // Pantalones
-    {
-        id: "pantalon-01",
-        titulo: "Pantalón 01",
-        imagen: "./img/pantalones/01.jpg",
-        categoria: {
-            nombre: "Pantalones",
-            id: "pantalones"
-        },
-        precio: 1000
+        precio: precioBolsa
     },
     {
-        id: "pantalon-02",
-        titulo: "Pantalón 02",
-        imagen: "./img/pantalones/02.jpg",
+        id: "bolsa-camel",
+        titulo: "Bolsa Camel",
+        imagen: "./img/abrigos/01.jpg",
         categoria: {
-            nombre: "Pantalones",
-            id: "pantalones"
+            nombre: "Bolsas",
+            id: "bolsas"
         },
-        precio: 1000
+        precio: precioBolsa
     },
-    {
-        id: "pantalon-03",
-        titulo: "Pantalón 03",
-        imagen: "./img/pantalones/03.jpg",
-        categoria: {
-            nombre: "Pantalones",
-            id: "pantalones"
-        },
-        precio: 1000
-    },
-    {
-        id: "pantalon-04",
-        titulo: "Pantalón 04",
-        imagen: "./img/pantalones/04.jpg",
-        categoria: {
-            nombre: "Pantalones",
-            id: "pantalones"
-        },
-        precio: 1000
-    },
-    {
-        id: "pantalon-05",
-        titulo: "Pantalón 05",
-        imagen: "./img/pantalones/05.jpg",
-        categoria: {
-            nombre: "Pantalones",
-            id: "pantalones"
-        },
-        precio: 1000
-    }
 ];
