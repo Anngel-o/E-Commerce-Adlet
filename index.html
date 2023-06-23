@@ -4,12 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CarpiShop</title>
+    <title>Adlet Accesorios</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-    
+    <div class="wrapper">
+        <aside>
+            <header>
+                <h1 class="logo">Adlet</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li>
+                        <button class="button-menu button-categoria">
+                            <i class="bi bi-hand-index-thumb"></i>Bolsas</button>
+                    </li>
+                    <li>
+                        <button class="button-menu button-categoria">
+                            <i class="bi bi-hand-index-thumb"></i>Accesorios</button>
+                    </li>
+                    <li>
+                        <button class="button-menu button-categoria">
+                            <i class="bi bi-hand-index-thumb"></i>Ropa</button>
+                    </li>
+                    <li>
+                        <button class="button-menu button-categoria">
+                            <i class="bi bi-hand-index-thumb-fill"></i>Todos los productos</button>
+                    </li>
+                    <li>
+                        <a class="button-carrito" href="./carrito.html">
+                            <i class="bi bi-cart4"></i>Carrito <span class="numCarrito">0</span></a>
+                    </li>
+                </ul>
+            </nav>
+            <footer>
+                <p class="text-footer">© 2023 Anngelo Systems</p>
+            </footer>
+        </aside>
+        <main>
+            <h2 class="titulo-principal">Todos los Productos</h2>
+            <div class="contenedor-productos">
+                <div class="producto">
+                    <img class="producto-imagen" src="" alt="">
+                    <div class="producto-detalles">
+                        <h3 class="producto-titulo">Bolsa Azul Rey</h3>
+                        <p class="producto-precio">$230 MX</p>
+                        <button class="producto-agregar">Agregar</button>
+                    </div>
+                </div>
+
+                <div class="producto">
+                    <img class="producto-imagen" src="" alt="">
+                    <div class="producto-detalles">
+                        <h3 class="producto-titulo">Bolsa Tommy</h3>
+                        <p class="producto-precio">$230 MX</p>
+                        <button class="producto-agregar">Agregar</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
     <script src="./js/main.js"></script>
 </body>
 </html>
