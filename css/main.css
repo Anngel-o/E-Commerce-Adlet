@@ -6,7 +6,8 @@
     --clr-white: #ececec;
     --clr-gray: #dbd5d595;
     --clr-red: #961818;
-    --clr-title: #C38456;
+    /* --clr-title: #C38456; */
+    --clr-title: #961717;
     --clr-title2: #D08467;
     --clr-azulito: #A7BFCE;
 }
@@ -28,6 +29,12 @@ ul {
 
 a {
     text-decoration: none;
+}
+
+.adan {
+    border-radius: 1rem;
+    max-width: 100%;
+    margin-top: 1rem;
 }
 
 .wrapper {
@@ -64,19 +71,19 @@ aside {
     background-color: transparent;
     border: 0;
     color: var(--clr-white);
-    font-size: 1.12rem;
+    font-size: 1rem;
     cursor: pointer;
     display: flex;
     gap: 1.1rem;
-    font-weight: 600;
+    font-weight: 500;
     padding: 1rem;
     align-items: center;
+    width: 100%;
 }
 
 .button-menu.active {
     background-color: var(--clr-white);
     color: var(--clr-title);
-    width: 100%;
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
     position: relative;
@@ -109,7 +116,7 @@ aside {
 .menu {
     display: flex;
     flex-direction: column;
-    gap: 0.85rem;
+    gap: .3rem;
 }
 
 i.bi-hand-index-thumb, i.bi-hand-index-thumb-fill {
