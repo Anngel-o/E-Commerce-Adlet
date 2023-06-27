@@ -10,6 +10,7 @@
     --clr-title: #961717;
     --clr-title2: #D08467;
     --clr-azulito: #A7BFCE;
+    --clr-black: #101010;
 }
 
 * {
@@ -31,10 +32,26 @@ a {
     text-decoration: none;
 }
 
+.logo {
+    width: 130px;
+    /* max-width: 100%; */
+    margin-bottom: -1rem;
+    position: relative;
+    z-index: 1;
+    margin-right: 0.9rem;
+    cursor: pointer;
+}
+
 .adan {
+    position: relative;
     border-radius: 1rem;
-    max-width: 100%;
-    margin-top: 1rem;
+    /* max-width: 100%; */
+    margin-top: -1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 200px;
+    height: 90px;
+    z-index: -1;
 }
 
 .wrapper {
@@ -46,7 +63,7 @@ a {
 aside {
     padding: 2rem;
     padding-right: 0;
-    color: var(--clr-white);
+    color: var(--clr-black);
     position: sticky;
     top: 0;
     height: 100vh;
@@ -55,11 +72,6 @@ aside {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-.logo {
-    font-weight: 400;
-    font-size: 1.8rem;
 }
 
 .text-footer {
@@ -83,7 +95,7 @@ aside {
 
 .button-menu.active {
     background-color: var(--clr-white);
-    color: var(--clr-title);
+    color: var(--clr-black);
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
     position: relative;
@@ -131,7 +143,7 @@ i.bi-hand-index-thumb, i.bi-hand-index-thumb-fill {
 
 .numCarrito {
     background-color: var(--clr-white);
-    color: var(--clr-title);
+    color: var(--clr-black);
     padding: 0.1rem 0.25rem;
     border-radius: 0.3rem;  
 }
@@ -152,6 +164,7 @@ main {
 .titulo-principal {
     color: var(--clr-red);
     margin-bottom: 2rem;
+    font-size: 1.5rem;
 }
 
 .contenedor-productos {
@@ -184,7 +197,7 @@ main {
 .producto-agregar {
     border: 0;
     background-color: var(--clr-white);
-    color: var(--clr-title);
+    color: var(--clr-black);
     padding: .5rem;
     font-weight: 450;
     text-transform: uppercase;
@@ -208,9 +221,14 @@ main {
 }
 
 .carrito-vacio, .carrito-comprado {
-    color: var(--clr-title);
+    color: var(--clr-black);
     /* display: none; */
     font-size: 1.25rem;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 52.5%;
+    margin: -25px 0 0 -25px;
 }
 
 .carrito-productos {
