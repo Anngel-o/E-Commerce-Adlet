@@ -1,7 +1,7 @@
 // PRODUCTOS
 const precioBolsa = 230;
 const productos = [
-    // Bolsas
+    // BOLSAS                                                *********************************
     {
         id: "bolsa-beso-rosa",
         titulo: "Bolsa Beso Rosa",
@@ -187,13 +187,23 @@ function updateButtonsAgregar() {
     });
 }
 
-const productosEnCarrito = [];
+let productosEnCarrito;
+let productosEnCarritoStorage = localStorage.getItem("productos-en-carrito");
+
+if (productosEnCarritoStorage) {
+    productosEnCarrito = JSON.parse(productosEnCarritoStorage);
+    updateNumCarrito();
+} else {
+    productosEnCarrito = [];
+}
+
+console.log(productosEnCarrito);
 
 function agregarAlCarrito(event) {
     const idButton = event.currentTarget.id;
     const productoAgregado = productos.find(producto => producto.id === idButton);
     
-    if (productosEnCarrito.some(producto => producto.id === productoAgregado)) {
+    if (productosEnCarrito.some(producto => producto.id === idButton)) {
         const index = productosEnCarrito.findIndex(producto => producto.id === idButton);
         productosEnCarrito[index].cantidad++;
     } else {
@@ -203,8 +213,11 @@ function agregarAlCarrito(event) {
     // console.log(productosEnCarrito);
 
     updateNumCarrito();
+
+    localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
 }
 
 function updateNumCarrito() {
-    let numCarrito = productosEnCarrito.reduce((acumulador, producto) => acumulador + producto.cantidad, 0);
+    let newNumCarrito = productosEnCarrito.reduce((acumulador, producto) => acumulador + producto.cantidad, 0);
+    numCarrito.innerText = newNumCarrito;
 }
