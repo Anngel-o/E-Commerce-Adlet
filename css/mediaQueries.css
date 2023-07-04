@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --clr-main: #D08467;
+    --clr-main-light: #eebba6;
+    --clr-white: #ececec;
+    --clr-gray: #dbd5d595;
+    --clr-red: #961818;
+    /* --clr-title: #C38456; */
+    --clr-title: #961717;
+    --clr-title2: #D08467;
+    --clr-azulito: #A7BFCE;
+    --clr-black: #101010;
+}
+
+/* *********** MEDIA QUERIES ************ */
+@media screen and (max-width: 620px) {
+    .wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    aside {
+        position: fixed;
+        z-index: 9;
+        background-color: var(--clr-title);
+        left: 0;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .75);
+        transform: translateX(-100%);
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .aside-visible {
+        transform: translateX(0); 
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .button-menu.active::before, .button-menu.active::after {
+        display: none;
+    }
+
+    main {
+        margin: 1rem;
+        margin-top: 0;
+        padding: 2rem;
+    }
+
+    .contenedor-productos {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .header-mobile {
+        display: flex;
+        padding: 1rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-mobile .logo {
+        color: var(--clr-gray);
+    }
+
+    .open-menu {
+        background-color: transparent;
+        color: var(--clr-white);
+        border: 0;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+}
