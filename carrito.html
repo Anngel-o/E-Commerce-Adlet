@@ -10,7 +10,17 @@
 </head>
 <body>
     <div class="wrapper">
+        <header class="header-mobile">
+            <center><img class="logo" src="./img/logo.png" alt="Adlet: Tienda de Accesorios"></center>
+            <img class="adan" src="./img/adan.jpg" alt="Adlet logo" min-height="120">
+            <button class="open-menu">
+                <i class="bi bi-list"></i>
+            </button>
+        </header>
         <aside>
+            <button class="close-menu">
+                <i class="bi bi-x-square"></i>
+            </button>
             <header>
                 <center><img class="logo" src="./img/logo.png" alt="Adlet: Tienda de Accesorios"></center>
                 <img class="adan" src="./img/adan.jpg" alt="" height="120">
@@ -37,7 +47,7 @@
                 <p class="carrito-vacio"><i class="bi bi-emoji-frown-fill"></i> Tu carrito está vacío</p>
                 <div class="carrito-productos disabled">
                     <!-- Los productos se llenarán con js innerHTML -->
-                    <div class="carrito-producto">
+                    <!-- <div class="carrito-producto">
                         <img class="carrito-producto-imagen" src="./img/bolsa-azul-rey.jpg" alt="">
                         <div class="carrito-producto-titulo">
                             <small>Título</small>
@@ -56,7 +66,7 @@
                             <p>$230 MX</p>
                         </div>
                         <button class="carrito-producto-eliminar"><i class="bi bi-trash3-fill"></i></button>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="carrito-acciones disabled">
                     <div class="carrito-acciones-izquierda">
@@ -75,6 +85,8 @@
             </div>
         </main>
     </div>
+
+    <script src="./js/menuMobile.js"></script>
     <script src="./js/carrito.js"></script>
 </body>
 </html>

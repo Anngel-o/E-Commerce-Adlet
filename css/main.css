@@ -136,9 +136,9 @@ i.bi-hand-index-thumb, i.bi-hand-index-thumb-fill {
 }
 
 .button-carrito {
-    margin-top: 2rem;
+    margin-top: 2rem; 
     color: var(--clr-white);
-    margin: 1rem;
+    /* margin: 1rem; */
 }
 
 .numCarrito {
@@ -314,5 +314,9 @@ main {
 }
 
 .header-mobile {
+    display: none;
+}
+
+.close-menu {
     display: none;
 }
