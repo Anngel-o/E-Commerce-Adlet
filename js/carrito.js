@@ -88,10 +88,25 @@ function eliminarDelCarrito(event) {
 }
 
 buttonVaciar.addEventListener("click", vaciarCarrito);
+
 function vaciarCarrito() {
-    productosEnCarrito.length = 0;
-    localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
-    cargarProductosCarrito();
+    Swal.fire({
+        title: '<strong>¿Quieres vaciar tu carrito?</strong>',
+        icon: 'question',
+        html:
+          `Se borrarán ${productosEnCarrito.reduce((acumulador,producto) => acumulador + producto.cantidad , 0)} productos.`,
+        showCancelButton: true,
+        focusConfirm: false,
+        confirmButtonText: 'Sí',
+        cancelButtonText: 'No',
+      }).then((result) => {
+        /* Read more about isConfirmed, isDenied below */
+        if (result.isConfirmed) {
+          productosEnCarrito.length = 0;
+          localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
+          cargarProductosCarrito();
+        }
+      });
 }
 
 function updateTotal() {
