@@ -1,0 +1,132 @@
+[
+    {
+        "id": "bolsa-beso-rosa",
+        "titulo": "Bolsa Beso Rosa",
+        "imagen": "./img/bolsa-azul-rey.jpg",
+        "categoria": {
+            "nombre": "Bolsas",
+            "id": "bolsas"
+        },
+        "precio": 180
+    },
+    {
+        "id": "bolsa-lila",
+        "titulo": "Bolsa Lila",
+        "imagen": "./img/bolsa-azul-rey.jpg",
+        "categoria": {
+            "nombre": "Bolsas",
+            "id": "bolsas"
+        },
+        "precio": 180
+    },
+    {
+        "id": "bolsa-lila-pequena",
+        "titulo": "Bolsa Lila Pequeña",
+        "imagen": "./img/bolsa-azul-rey.jpg",
+        "categoria": {
+            "nombre": "Bolsas",
+            "id": "bolsas"
+        },
+        "precio": 180
+    },
+    {
+        "id": "bolsa-azul-rey",
+        "titulo": "Bolsa Azul Rey",
+        "imagen": "./img/bolsa-azul-rey.jpg",
+        "categoria": {
+            "nombre": "Bolsas",
+            "id": "bolsas"
+        },
+        "precio": 180
+    },
+    {
+        "id": "bolsa-verde",
+        "titulo": "Bolsa Verde",
+        "imagen": "./img/bolsa-azul-rey.jpg",
+        "categoria": {
+            "nombre": "Bolsas",
+            "id": "bolsas"
+        },
+        "precio": 180
+    },
+    {
+        "id": "bolsa-olivo",
+        "titulo": "Bolsa Olivo",
+        "imagen": "./img/bolsa-azul-rey.jpg",
+        "categoria": {
+            "nombre": "Bolsas",
+            "id": "bolsas"
+        },
+        "precio": 180
+    },
+    {
+        "id": "bolsa-roja",
+        "titulo": "Bolsa Roja",
+        "imagen": "./img/bolsa-azul-rey.jpg",
+        "categoria": {
+            "nombre": "Bolsas",
+            "id": "bolsas"
+        },
+        "precio": 180
+    },
+    {
+        "id": "bolsa-buganbilia",
+        "titulo": "Bolsa Buganbilia",
+        "imagen": "./img/bolsa-tommy.jpg",
+        "categoria": {
+            "nombre": "Bolsas",
+            "id": "bolsas"
+        },
+        "precio": 180
+    },
+    {
+        "id": "bolsa-negra",
+        "titulo": "Bolsa Negra",
+        "imagen": "./img/bolsa-tommy.jpg",
+        "categoria": {
+            "nombre": "Bolsas",
+            "id": "bolsas"
+        },
+        "precio": 180
+    },
+    {
+        "id": "bolsa-negra-mono",
+        "titulo": "Bolsa Negra Moño",
+        "imagen": "./img/bolsa-tommy.jpg",
+        "categoria": {
+            "nombre": "Bolsas",
+            "id": "bolsas"
+        },
+        "precio": 180
+    },
+    {
+        "id": "bolsa-tommy",
+        "titulo": "Bolsa Tommy",
+        "imagen": "./img/bolsa-tommy.jpg",
+        "categoria": {
+            "nombre": "Bolsas",
+            "id": "bolsas"
+        },
+        "precio": 180
+    },
+    {
+        "id": "bolsa-olivo",
+        "titulo": "Bolsa Olivo",
+        "imagen": "./img/bolsa-tommy.jpg",
+        "categoria": {
+            "nombre": "Accesorios",
+            "id": "accesorios"
+        },
+        "precio": 180
+    },
+    {
+        "id": "bolsa-camel",
+        "titulo": "Bolsa Camel",
+        "imagen": "./img/bolsa-tommy.jpg",
+        "categoria": {
+            "nombre": "Zapatos",
+            "id": "zapatos"
+        },
+        "precio": 180
+    }
+]

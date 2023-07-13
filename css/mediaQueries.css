@@ -34,12 +34,12 @@
         row-gap: 1rem;
     }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 710px) {
     .contenedor-productos {
         grid-template-columns: 1fr 1fr;
     }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 620px) {
     .wrapper {
         /* grid-template-columns: 1fr; */
         min-height: 100vh;

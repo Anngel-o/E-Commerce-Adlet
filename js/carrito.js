@@ -66,6 +66,19 @@ function updateButtonsEliminar() {
 }
 
 function eliminarDelCarrito(event) {
+    Toastify({
+        text: "ELIMINADO",
+        duration: 3000,
+        newWindow: true,
+        close: true,
+        gravity: "bottom", // `top` or `bottom`
+        position: "right", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+          background: "linear-gradient(to right, #961717, #D08467)",
+        },
+        onClick: function(){} // Callback after click
+      }).showToast();
     let idButton = event.currentTarget.id;
     const index = productosEnCarrito.findIndex(producto => producto.id === idButton);
     productosEnCarrito.splice(index, 1);

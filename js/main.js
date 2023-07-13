@@ -1,138 +1,10 @@
-// PRODUCTOS
-const precioBolsa = 230;
-const productos = [
-    // BOLSAS                                                *********************************
-    {
-        id: "bolsa-beso-rosa",
-        titulo: "Bolsa Beso Rosa",
-        imagen: "./img/bolsa-azul-rey.jpg",
-        categoria: {
-            nombre: "Bolsas",
-            id: "bolsas"
-        },
-        precio: precioBolsa
-    },
-    {
-        id: "bolsa-lila",
-        titulo: "Bolsa Lila",
-        imagen: "./img/bolsa-azul-rey.jpg",
-        categoria: {
-            nombre: "Bolsas",
-            id: "bolsas"
-        },
-        precio: precioBolsa
-    },
-    {
-        id: "bolsa-lila-pequena",
-        titulo: "Bolsa Lila Pequeña",
-        imagen: "./img/bolsa-azul-rey.jpg",
-        categoria: {
-            nombre: "Bolsas",
-            id: "bolsas"
-        },
-        precio: precioBolsa
-    },
-    {
-        id: "bolsa-azul-rey",
-        titulo: "Bolsa Azul Rey",
-        imagen: "./img/bolsa-azul-rey.jpg",
-        categoria: {
-            nombre: "Bolsas",
-            id: "bolsas"
-        },
-        precio: precioBolsa
-    },
-    {
-        id: "bolsa-verde",
-        titulo: "Bolsa Verde",
-        imagen: "./img/bolsa-azul-rey.jpg",
-        categoria: {
-            nombre: "Bolsas",
-            id: "bolsas"
-        },
-        precio: precioBolsa
-    },
-    {
-        id: "bolsa-olivo",
-        titulo: "Bolsa Olivo",
-        imagen: "./img/bolsa-azul-rey.jpg",
-        categoria: {
-            nombre: "Bolsas",
-            id: "bolsas"
-        },
-        precio: precioBolsa
-    },
-    {
-        id: "bolsa-roja",
-        titulo: "Bolsa Roja",
-        imagen: "./img/bolsa-azul-rey.jpg",
-        categoria: {
-            nombre: "Bolsas",
-            id: "bolsas"
-        },
-        precio: precioBolsa
-    },
-    {
-        id: "bolsa-buganbilia",
-        titulo: "Bolsa Buganbilia",
-        imagen: "./img/bolsa-tommy.jpg",
-        categoria: {
-            nombre: "Bolsas",
-            id: "bolsas"
-        },
-        precio: precioBolsa
-    },
-    {
-        id: "bolsa-negra",
-        titulo: "Bolsa Negra",
-        imagen: "./img/bolsa-tommy.jpg",
-        categoria: {
-            nombre: "Bolsas",
-            id: "bolsas"
-        },
-        precio: precioBolsa
-    },
-    {
-        id: "bolsa-negra-mono",
-        titulo: "Bolsa Negra Moño",
-        imagen: "./img/bolsa-tommy.jpg",
-        categoria: {
-            nombre: "Bolsas",
-            id: "bolsas"
-        },
-        precio: precioBolsa
-    },
-    {
-        id: "bolsa-tommy",
-        titulo: "Bolsa Tommy",
-        imagen: "./img/bolsa-tommy.jpg",
-        categoria: {
-            nombre: "Bolsas",
-            id: "bolsas"
-        },
-        precio: precioBolsa
-    },
-    {
-        id: "bolsa-olivo",
-        titulo: "Bolsa Olivo",
-        imagen: "./img/bolsa-tommy.jpg",
-        categoria: {
-            nombre: "Accesorios",
-            id: "accesorios"
-        },
-        precio: precioBolsa
-    },
-    {
-        id: "bolsa-camel",
-        titulo: "Bolsa Camel",
-        imagen: "./img/bolsa-tommy.jpg",
-        categoria: {
-            nombre: "Zapatos",
-            id: "zapatos"
-        },
-        precio: precioBolsa
-    },
-];
+let productos = [];
+fetch("./js/productos.json")
+    .then(response => response.json())
+    .then(data => {
+        productos = data;
+        loadProducts(productos);
+    })
 
 const contenedorProductos = document.querySelector("#contenedor-productos");
 const botonesCategorias = document.querySelectorAll(".button-categoria");
@@ -160,8 +32,6 @@ function loadProducts(productosElegidos) {
     updateButtonsAgregar();
     // console.log(botonesAgregar);
 }
-
-loadProducts(productos);
 
 botonesCategorias.forEach(button => {
     button.addEventListener("click", (event) => {
@@ -200,6 +70,20 @@ if (productosEnCarritoStorage) {
 console.log(productosEnCarrito);
 
 function agregarAlCarrito(event) {
+    Toastify({
+        text: "AGREGADO",
+        duration: 3000,
+        newWindow: true,
+        close: true,
+        gravity: "bottom", // `top` or `bottom`
+        position: "right", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+          background: "linear-gradient(to right, #961717, #D08467)",
+        },
+        onClick: function(){} // Callback after click
+      }).showToast();
+      
     const idButton = event.currentTarget.id;
     const productoAgregado = productos.find(producto => producto.id === idButton);
     
